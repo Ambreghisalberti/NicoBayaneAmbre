@@ -16,7 +16,7 @@ license = {text = "MIT"}
 dependencies = [
     "pandas", "numpy", "matplotlib", "scipy",
     "spok @ git+https://github.com/LaboratoryOfPlasmaPhysics/spok.git@main",
-    "skimage", "scikit-learn", "structure_tensor", "shapely"
+    "scikit-image", "scikit-learn", "structure_tensor", "shapely"
 ]
 requires-python = ">= 3.10"
 
