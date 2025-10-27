@@ -1,5 +1,6 @@
 """Main module."""
 import sys
+import os
 import numpy as np
 import pandas as pd
 from multiprocessing import Pool
@@ -18,8 +19,10 @@ from shapely import Point, LineString
 
 # sys.path.append('../space/')
 # sys.path.append('../spok/')
-sys.path.append('.')
-sys.path.insert(0, './py_tsyganenko/build/')
+#sys.path.append('.')
+sys.path.append(os.path.dirname(__file__))
+sys.path.append(0,os.path.dirname(__file__)+'py_tsyganenko/build/')
+#sys.path.insert(0, './py_tsyganenko/build/')
 
 from utilities import pandas_fill, reshape_to_2Darrays, reshape_to_original_shape, filter_nan_gaussian_conserving2, \
     assert_regularity_grid
